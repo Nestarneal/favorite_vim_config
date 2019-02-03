@@ -6,6 +6,12 @@ By the way, I'm using mac to develop something. So the steps may be not suitable
 
 ## Steps
 
+0. Install Homebrew and install vim by that for the latest version of vim
+
+```
+brew install vim
+```
+
 1. Install [vim-plug](https://github.com/junegunn/vim-plug)
 
 ```
