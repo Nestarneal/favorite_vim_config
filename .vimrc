@@ -6,6 +6,9 @@ syntax enable
 set background=dark
 colorscheme peaksea
 
+set cursorline
+hi CursorLine term=bold cterm=bold ctermbg=Black
+
 " Show the number of each line
 set number
 " display completion matches in a status line
@@ -30,6 +33,9 @@ Plug 'tpope/vim-endwise'
 Plug 'jiangmiao/auto-pairs'
 Plug 'aklt/plantuml-syntax'
 Plug 'ap/vim-buftabline'
+Plug 'MaxMEllon/vim-jsx-pretty'
+Plug 'vim-airline/vim-airline'
+Plug 'leafgarland/typescript-vim'
 call plug#end()
 
 let g:indentLine_color_term = 239
@@ -37,9 +43,12 @@ let g:indentLine_color_term = 239
 set colorcolumn=140
 set hlsearch
 set clipboard=unnamed
+" Allow backspacing over everything in insert mode.
+set backspace=indent,eol,start
 hi Search ctermbg=LightYellow
 hi Search ctermfg=Black
 
 nnoremap <C-Bslash> :NERDTreeToggle<CR>
 nnoremap <C-k> :bnext<CR>
 nnoremap <C-j> :bprevious<CR>
+nnoremap <C-d> viw
